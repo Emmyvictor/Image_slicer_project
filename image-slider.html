@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VISTA — Image Slider</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="progressBar"></div>
+
+<div class="slider" id="slider">
+
+  <div class="navbar">
+    <div class="brand">VIS<span>TA</span></div>
+    <nav class="nav-links">
+      <a href="#">Explore</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+
+  <div class="side-label" id="sideLabel">Photography — Auto-Advancing</div>
+
+  <div id="slidesWrap"></div>
+
+  <button class="arrow-btn" id="prevBtn">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="arrow-btn" id="nextBtn">
+    <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+
+  <div class="dots" id="dotsWrap"></div>
+  <div class="thumbstrip" id="thumbsWrap"></div>
+
+  <div id="pauseBadge">⏸ Paused</div>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
